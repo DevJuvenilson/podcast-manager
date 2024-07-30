@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "dist": "npx tsc",
     "start:dev": "npx tsx --env-file=.env src/server.ts",
+    "start:watch": "npx tsx watch --env-file=.env src/server.ts",
     "start:dist": "npm run dist && node --env-file=.env dist/server.js"
   },
   "keywords": [],
