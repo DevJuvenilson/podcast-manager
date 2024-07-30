@@ -17,7 +17,9 @@ Podcast feitos em vídeos.
  Listar os episódios podcasts em seções de categorias.
 
 ### How will I implement it?
- Vou retornar em uma API Rest (json) o nome podcast, nome do episódio, imagem de capa, link
+ GET: Vou retornar em uma API Rest (json) o nome podcast, nome do episódio, imagem de capa, link
+
+ response:
 
 #### Example of a JSON File returned:
 ```js
@@ -25,7 +27,7 @@ Podcast feitos em vídeos.
   {
       podcastName: "Flow",
       episodeName: "CBUM - Flow #319",
-      videoId: "pQSuQmUfS3"
+      videoId: "pQSuQmUfS3",
       coverPhoto: "https://i.ytimg.com/vi/pQSuQmUfS30/maxresdefault.jpg",
       linkVideo: "https://www.youtube.com/watch?v=pQSuQmUfS30",
       categories: ["saúde", "esporte", "bodybuilding"]
@@ -33,7 +35,7 @@ Podcast feitos em vídeos.
   {
       podcastName: "Flow",
       episodeName: "RUBENS BARRICHELLO - Flow #339",
-      videoId: "4KDGTdiOV4I"
+      videoId: "4KDGTdiOV4I",
       coverPhoto: "https://i.ytimg.com/vi/4KDGTdiOV4I/maxresdefault.jpg",
       linkVideo: "https://www.youtube.com/watch?v=4KDGTdiOV4I",
       categories: ["esporte", "corrida"]
