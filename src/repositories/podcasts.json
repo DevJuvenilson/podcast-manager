@@ -1,19 +1,19 @@
 [
     {
-        "podcastName": "Flow",
+        "podcastName": "flow",
         "episodeName": "CBUM - Flow #319",
         "videoId": "pQSuQmUfS3",
         "categories": ["saúde", "esporte", "bodybuilding"]
     },
     {
-        "podcastName": "Flow",
+        "podcastName": "flow",
         "episodeName": "RUBENS BARRICHELLO - Flow #339",
         "videoId": "4KDGTdiOV4I",
         "categories": ["esporte", "corrida"]
     },
     {
-        "podcastName": "Venus",
-        "episodeName": "METAFORANDO - Vênus #339",
+        "podcastName": "venus",
+        "episodeName": "METAFORANDO - Vênus #119",
         "videoId": "4KDGTdiOV4I",
         "categories": ["humor", "linguagem corporal"]
     }

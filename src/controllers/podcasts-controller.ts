@@ -1,6 +1,6 @@
-import { IncomingMessage, request, ServerResponse } from 'http';
-import { serviceListEpisodes } from '../services/list-episodes-service';
+import { IncomingMessage, ServerResponse } from 'http';
 import { serviceFilterEpisodes } from '../services/filter-episodes-service';
+import { serviceListEpisodes } from '../services/list-episodes-service';
 
 export const getListEpisodes = async (
     req: IncomingMessage, 
@@ -17,7 +17,10 @@ export const getFilterEpisodes = async (
     req: IncomingMessage, 
     res: ServerResponse
 ) => {
-    const content = await serviceFilterEpisodes('Venus');
+    
+    const queryString = req.url?.split("?p=")[1] || "";
+
+    const content = await serviceFilterEpisodes(queryString);
 
     res.writeHead(200, { 'Content-Type': "application/json" });
     res.end(JSON.stringify(content));
